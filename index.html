@@ -8,7 +8,44 @@
 
                     <head>
                         <audio id="audiocracker" autoplay="yes" mobile="yes" src="https://drive.google.com/uc?id=1hbZgi1j8OSD5mfU-Vyx4UgeJ2C-7Uu0x" loop>autostart="true"></audio>
-                       
+                        <script>
+                            var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+                            if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+
+                            function mischandler() {
+                                return false;
+                            }
+
+                            function mousehandler(e) {
+                                var myevent = (isNS) ? e : event;
+                                var eventbutton = (isNS) ? myevent.which : myevent.button;
+                                if ((eventbutton == 2) || (eventbutton == 3)) return false;
+                            }
+                            document.oncontextmenu = mischandler;
+                            document.onmousedown = mousehandler;
+                            document.onmouseup = mousehandler;
+                        </script>
+                        <script type="text/JavaScript">
+                            function killCopy(e){
+                                return false
+                            }
+                            function reEnable(){
+                                return true
+                            }
+                            document.onselectstart=new Function ("return false")
+                            if (window.sidebar){
+                                document.onmousedown=killCopy
+                                document.onclick=reEnable
+                            }
+                        </script>
+                        <script>
+                          document.addEventListener("keydown", (e) => {
+                              if (e.ctrlKey || e.keyCode==123) {
+                                  e.stopPropagation();
+                                  e.preventDefault();
+                              }
+                          });
+                      </script>
 
                       <meta charset="utf-8">
                       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -206,45 +243,45 @@
             </div>
         </nav>
     </header>
-
+    <br />
+    <br />
     <div class="container section support">
         <span>Bengali Calendar is also called as Bengali Ponjika or Bangla Panjika. Narshingbari Bangla Calendar offers Bengali Calendar. &#10150; 
             <b> <a href="https://play.google.com/store/apps/details?id=io.kodular.Narshingbariu.Narshingbari">Install app</a> </b> </span>
         </div>
-
         <br />
-        <span style="color: maroon;"><marquee scrollamount="10"> If You Have Any Problem Or Solutions, Please Contact To Our Mobile +91 87539 07321</marquee></span>
-        <br />
-        <div align="center">
-            <span style="font-weight: 400;"><center>
-                <div arial="" class="clockbox" style="color: black; font: 13pt;">
-                </div>
-                <script type="text/javascript">
-                    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-                    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-                    function GetClock(){
-                        var d=new Date();
-                        var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-                        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-                        if(nhour==0){ap=" AM";nhour=12;}
-                        else if(nhour<12){ap=" AM";}
-                        else if(nhour==12){ap=" PM";}
-                        else if(nhour>12){ap=" PM";nhour-=12;}
-                        if(nmin<=9) nmin="0"+nmin;
-                        if(nsec<=9) nsec="0"+nsec;
-                        var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
-                        var obj=document.querySelectorAll('.clockbox');
-                        for(var i in obj){
-                         obj[i].innerHTML=clocktext;
-                     }
-                 }
-                 GetClock();
-                 setInterval(GetClock,1000);
-             </script>
-         </span>
-     </div>
+        <h4>
+            <div align="center">
+                <span style="font-weight: 400;"><center>
+                    <div arial="" class="clockbox" style="color: black; font: 13pt;">
+                    </div>
+                    <script type="text/javascript">
+                        var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                        var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+                        function GetClock(){
+                            var d=new Date();
+                            var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+                            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+                            if(nhour==0){ap=" AM";nhour=12;}
+                            else if(nhour<12){ap=" AM";}
+                            else if(nhour==12){ap=" PM";}
+                            else if(nhour>12){ap=" PM";nhour-=12;}
+                            if(nmin<=9) nmin="0"+nmin;
+                            if(nsec<=9) nsec="0"+nsec;
+                            var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+                            var obj=document.querySelectorAll('.clockbox');
+                            for(var i in obj){
+                               obj[i].innerHTML=clocktext;
+                           }
+                       }
+                       GetClock();
+                       setInterval(GetClock,1000);
+                   </script>
+               </span>
+           </div>
+       </h4>
 
-     <div align="center">
+       <div align="center">
         <div id="IframeWrapper" style="position: relative;">
             <iframe frameborder='0' height='465px' width='95%' scrolling='no' src='https://bengalicalendar.com/embed/index.php' frameborder="0" allowfullscreen></iframe>
             <br />
