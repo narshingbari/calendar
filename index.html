@@ -243,7 +243,7 @@
             </div>
         </nav>
     </header>
-
+    <br />
     <div class="container section support">
         <span>Bengali Calendar is also called as Bengali Ponjika or Bangla Panjika. Narshingbari Bangla Calendar offers Bengali Calendar. &#10150; 
             <b> <a href="https://play.google.com/store/apps/details?id=io.kodular.Narshingbariu.Narshingbari">Install app</a> </b> </span>
@@ -272,20 +272,20 @@
                         var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
                         var obj=document.querySelectorAll('.clockbox');
                         for(var i in obj){
-                         obj[i].innerHTML=clocktext;
-                     }
-                 }
-                 GetClock();
-                 setInterval(GetClock,1000);
-             </script>
-         </span>
-     </div>
+                           obj[i].innerHTML=clocktext;
+                       }
+                   }
+                   GetClock();
+                   setInterval(GetClock,1000);
+               </script>
+           </span>
+       </div>
 
-     <div align="center">
+       <div align="center">
         <div id="IframeWrapper" style="position: relative;">
             <iframe frameborder='0' height='465px' width='95%' scrolling='no' src='https://bengalicalendar.com/embed/index.php' frameborder="0" allowfullscreen></iframe>
             <br />
-            <div id="iframeBlocker" style="background-color: aliceblue; height: 95%; left: 0; opacity: 0.1; position: absolute; top: 0; width: 95%;">
+            <div id="iframeBlocker" style="background-color: red; height: 50%; left: 0; opacity: 0.1; position: absolute; top: 0; width: 95%;">
             </div>
         </div>
     </div>
