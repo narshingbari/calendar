@@ -246,42 +246,42 @@
     <br />
     <br />
     <div class="container section support">
-        <span>Bengali Calendar is also called as Bengali Ponjika or Bangla Panjika. Narshingbari Bangla Calendar offers Bengali Calendar. &#10150; 
+        <span>Bengali Calendar is also called as Bengali Ponjika or Bangla Panjika. Narshingbari Bangla Calendar offers Lifetime Calendar. &#10150; 
             <b> <a href="https://play.google.com/store/apps/details?id=io.kodular.Narshingbariu.Narshingbari">Install app</a> </b> </span>
         </div>
-<div style="text-align: center;"><b>Current Bengali Date &amp; Time</b></div>
+        <div style="text-align: center;"><b><u>Current Bengali Date &amp; Time</u></b></div>
 
-            <div align="center">
-                <span style="font-weight: 400;"><center>
-                    <div arial="" class="clockbox" style="color: blue; font: 20pt;">
-                    </div>
-                    <script type="text/javascript">
-                        var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-                        var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-                        function GetClock(){
-                            var d=new Date();
-                            var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-                            var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-                            if(nhour==0){ap=" AM";nhour=12;}
-                            else if(nhour<12){ap=" AM";}
-                            else if(nhour==12){ap=" PM";}
-                            else if(nhour>12){ap=" PM";nhour-=12;}
-                            if(nmin<=9) nmin="0"+nmin;
-                            if(nsec<=9) nsec="0"+nsec;
-                            var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
-                            var obj=document.querySelectorAll('.clockbox');
-                            for(var i in obj){
-                             obj[i].innerHTML=clocktext;
-                         }
-                     }
-                     GetClock();
-                     setInterval(GetClock,1000);
-                 </script>
-             </span>
-         </div>
+        <div align="center">
+            <span style="font-weight: 400;"><center>
+                <div arial="" class="clockbox" style="color: magenta; font: 20pt;">
+                </div>
+                <script type="text/javascript">
+                    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+                    function GetClock(){
+                        var d=new Date();
+                        var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+                        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+                        if(nhour==0){ap=" AM";nhour=12;}
+                        else if(nhour<12){ap=" AM";}
+                        else if(nhour==12){ap=" PM";}
+                        else if(nhour>12){ap=" PM";nhour-=12;}
+                        if(nmin<=9) nmin="0"+nmin;
+                        if(nsec<=9) nsec="0"+nsec;
+                        var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
+                        var obj=document.querySelectorAll('.clockbox');
+                        for(var i in obj){
+                           obj[i].innerHTML=clocktext;
+                       }
+                   }
+                   GetClock();
+                   setInterval(GetClock,1000);
+               </script>
+           </span>
+       </div>
 
 
-     <div align="center">
+       <div align="center">
         <div id="IframeWrapper" style="position: relative;">
             <iframe frameborder='0' height='365px' width='95%' scrolling='no' src='https://bengalicalendar.com/embed/index.php' frameborder="0" allowfullscreen></iframe>
             <br />
