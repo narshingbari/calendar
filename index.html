@@ -220,6 +220,51 @@
                             background: #fff;
                             text-align: left
                         }
+
+                        .back-top {
+    display: none;
+    z-index: 1010;
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 32px
+}
+
+.back-top:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #2874f0;
+    opacity: .5;
+    transition: opacity .17s ease
+}
+
+.back-top:after {
+    content: '\f077';
+    position: relative;
+    font-family: FontAwesome;
+    font-weight: 400;
+    opacity: .8;
+    transition: opacity .17s ease
+}
+
+.back-top:hover:before,
+.back-top:hover:after,
+.nav-active .back-top:after,
+.nav-active .back-top:before {
+    opacity: 1
+}
+
                     </style>
                 </head>
 
@@ -312,7 +357,21 @@
                             // Sets the copyright year
                     var date = new Date();
                     $('#year').text(date.getFullYear());
+
+                    $('.back-top').each(function() {
+    var _0xd8e9xf = $(this);
+    $(window).on('scroll', function() {
+        $(this).scrollTop() >= 100 ? _0xd8e9xf.fadeIn(250) : _0xd8e9xf.fadeOut(250)
+    }), _0xd8e9xf.click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500)
+    })
+});
                 </script>
+
+                <!-- Overlay and Back To Top -->
+<div class='back-top' title='Back to Top'></div>
             </body>
 
             </html>
