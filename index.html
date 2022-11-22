@@ -251,66 +251,42 @@
         </nav>
     </header>
 
+    <main class="container valign-wrapper">
+
+    </main>
     <div>
 
-        <center>
+        <div align="center">
             <div id="IframeWrapper" style="position: relative;">
-                <iframe frameborder='0' height='responsive' width='responsive' scrolling='no' src='https://bengalicalendar.com/embed/index.php' frameborder="0" allowfullscreen></iframe>
+                <iframe frameborder='0' height='465px' width='95%' scrolling='no' src='https://bengalicalendar.com/embed/index.php' frameborder="0" allowfullscreen></iframe>
                 <br />
                 <div id="iframeBlocker" style="background-color: aliceblue; height: 95%; left: 0; opacity: 0.1; position: absolute; top: 0; width: 95%;">
                 </div>
             </div>
-            <div>
-                <h5>
-                    <span style="font-weight: 400;"><center>
-                        <div arial="" class="clockbox" style="color: magenta; font: 13pt;">
-                        </div>
-                        <script type="text/javascript">
-                            var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-                            var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-                            function GetClock(){
-                                var d=new Date();
-                                var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-                                var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-                                if(nhour==0){ap=" AM";nhour=12;}
-                                else if(nhour<12){ap=" AM";}
-                                else if(nhour==12){ap=" PM";}
-                                else if(nhour>12){ap=" PM";nhour-=12;}
-                                if(nmin<=9) nmin="0"+nmin;
-                                if(nsec<=9) nsec="0"+nsec;
-                                var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
-                                var obj=document.querySelectorAll('.clockbox');
-                                for(var i in obj){
-                                   obj[i].innerHTML=clocktext;
-                               }
-                           }
-                           GetClock();
-                           setInterval(GetClock,1000);
-                       </script></center>
-                   </span></h5>
-               </div>
-               <div class="container section support">
-                <span>If you are experiencing any issues please contact
-                    <a href="mailto:Narshingbariu@gmail.com">Narshingbari@mail.com</a></span>
-                </div>
-                <footer class="page-footer blue">
-                    <div class="footer-copyright">
-                        <div class="container white-text" style="display: flex;justify-content: space-between;">
-                            <span>Copyright © <span id="year">2023</span> Narshingbari Bangla Calendar</span>
-                            <a href="https://narshingbaristore.blogspot.com/" class="white-text right" rel="dofollow">All Right Reserved</a>
-                        </div>
+        </div>
+
+        <div class="container section support">
+            <span>If you are experiencing any issues please contact
+                <a href="mailto:Narshingbariu@gmail.com">Narshingbari@mail.com</a></span>
+            </div>
+            <footer class="page-footer blue">
+                <div class="footer-copyright">
+                    <div class="container white-text" style="display: flex;justify-content: space-between;">
+                        <span>Copyright © <span id="year">2023</span> Narshingbari Bangla Calendar</span>
+                        <a href="https://narshingbaristore.blogspot.com/" class="white-text right" rel="dofollow">All Right Reserved</a>
                     </div>
-                </footer>
+                </div>
+            </footer>
 
-                <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
-                <script type="text/javascript">
-                    $(function() {
+            <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
+            <script type="text/javascript">
+                $(function() {
                             // Sets the copyright year
-                        var date = new Date();
-                        $('#year').text(date.getFullYear());
-                    </script>
-                </body>
+                    var date = new Date();
+                    $('#year').text(date.getFullYear());
+                </script>
+            </body>
 
-                </html>
+            </html>
