@@ -246,8 +246,8 @@
 
     <br />
     <br />
-    <br />
     <span style="font-weight: normal;"><marquee behavior="alternate">Mail at :-<span style="color: magenta;"> </span><span style="color: red;">Narshingbari@mail.com</span></marquee></span>
+    <br />
     <div align="center">
         <span style="font-weight: 400;"><center>
             <div arial="" class="clockbox" style="color: magenta; font: 13pt;">
@@ -268,16 +268,16 @@
                     var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
                     var obj=document.querySelectorAll('.clockbox');
                     for(var i in obj){
-                     obj[i].innerHTML=clocktext;
-                 }
-             }
-             GetClock();
-             setInterval(GetClock,1000);
-         </script>
-     </span>
- </div>
+                       obj[i].innerHTML=clocktext;
+                   }
+               }
+               GetClock();
+               setInterval(GetClock,1000);
+           </script>
+       </span>
+   </div>
 
- <div align="center">
+   <div align="center">
     <div id="IframeWrapper" style="position: relative;">
         <iframe frameborder='0' height='465px' width='95%' scrolling='no' src='https://bengalicalendar.com/embed/index.php' frameborder="0" allowfullscreen></iframe>
         <br />
