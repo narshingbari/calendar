@@ -1,318 +1,85 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>       <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-    <!--[if IE 7]>          <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-        <!--[if IE 8]>          <html class="no-js lt-ie9"> <![endif]-->
-            <!--[if gt IE 8]><!-->
-                <html class="no-js">
-                <!--<![endif]-->
+<html lang="en" >
+<head>
+	<audio id="audiocracker" autoplay="yes" mobile="yes" src="https://drive.google.com/uc?id=1hbZgi1j8OSD5mfU-Vyx4UgeJ2C-7Uu0x" loop>autostart="true"></audio>
+    <script>
+        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+        if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
 
-                    <head>
-                        <audio id="audiocracker" autoplay="yes" mobile="yes" src="https://drive.google.com/uc?id=1hbZgi1j8OSD5mfU-Vyx4UgeJ2C-7Uu0x" loop>autostart="true"></audio>
-                        <script>
-                            var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-                            if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+        function mischandler() {
+            return false;
+        }
 
-                            function mischandler() {
-                                return false;
-                            }
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+    </script>
+    <script type="text/JavaScript">
+        function killCopy(e){
+            return false
+        }
+        function reEnable(){
+            return true
+        }
+        document.onselectstart=new Function ("return false")
+        if (window.sidebar){
+            document.onmousedown=killCopy
+            document.onclick=reEnable
+        }
+    </script>
+    <script>
+      document.addEventListener("keydown", (e) => {
+          if (e.ctrlKey || e.keyCode==123) {
+              e.stopPropagation();
+              e.preventDefault();
+          }
+      });
+  </script>
+<meta charset="UTF-8">
+  <title>Narshingbari Saddam - Digital Clock</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content='This is Narshingbari Saddam online Progress clock website for exact time. its very easy to use, This website designed and developed by Saddam Hussain of Narshingbari' name='description' />
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Arvo'><link rel="stylesheet" href="./style-error.css">
 
-                            function mousehandler(e) {
-                                var myevent = (isNS) ? e : event;
-                                var eventbutton = (isNS) ? myevent.which : myevent.button;
-                                if ((eventbutton == 2) || (eventbutton == 3)) return false;
-                            }
-                            document.oncontextmenu = mischandler;
-                            document.onmousedown = mousehandler;
-                            document.onmouseup = mousehandler;
-                        </script>
-                        <script type="text/JavaScript">
-                            function killCopy(e){
-                                return false
-                            }
-                            function reEnable(){
-                                return true
-                            }
-                            document.onselectstart=new Function ("return false")
-                            if (window.sidebar){
-                                document.onmousedown=killCopy
-                                document.onclick=reEnable
-                            }
-                        </script>
-                        <script>
-                          document.addEventListener("keydown", (e) => {
-                              if (e.ctrlKey || e.keyCode==123) {
-                                  e.stopPropagation();
-                                  e.preventDefault();
-                              }
-                          });
-                      </script>
-
-                      <meta charset="utf-8">
-                      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                      <meta name="viewport" content="width=device-width, initial-scale=1">
-                      <!-- Metadata Powered by Narshingbari Saddam-->
-                      <title>Narshingbari Saddam Official Bangla Calendar 1429</title>
-                      <link rel="icon" type="image/png" sizes="32x32" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
-                      <meta name="description" content="The #1 This is Narshingbari Saddam Official Bangla Calendar 1430 website. Bengali Calendar is also called as Bengali Ponjika or Bangla Panjika. narshingbari.github.io/calendar offers Bengali Calendar with Monthly Bengali Calendar for Kolkata, West Bengal, India., this website designed and developed by saddam hussain of narshingbari!">
-                      <meta name="robots" content="noodp">
-                      <meta name="keywords" content="Narshingbari Saddam Official Bangla Calendar, calendar offers Bengali Calendar with Monthly Bengali Calendar for Kolkata, West Bengal, India, calendar">
-                      <meta property="og:locale" content="en_US">
-                      <meta property="og:type" content="article">
-                      <meta property="og:title" content="Narshingbari Saddam Official Bangla Calendar">
-                      <meta itemprop="url" content="">
-                      <meta itemprop="name" content="Bangla Calendar 1430">
-
-                      <meta property="og:description" content="The #1 This is Narshingbari Saddam Official Bangla Calendar 1430 website. Bengali Calendar is also called as Bengali Ponjika or Bangla Panjika. narshingbari.github.io/calendar offers Bengali Calendar with Monthly Bengali Calendar for Kolkata, West Bengal, India., this website designed and developed by saddam hussain of narshingbari!">
-                      <meta property="og:site_name" content="Narshingbari Saddam Official Bangla Calendar 1430">
-                      <meta property="og:image" content="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
-                      <!-- Designed By Narshingbari Saddam-->
-                      <!-- Favicons-->
-                      <link rel="apple-touch-icon-precomposed" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
-                      <meta name="msapplication-TileColor" content="#FFFFFF">
-                      <meta name="msapplication-TileImage" content="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg">
-                      <link rel="icon" href="https://i.postimg.cc/28jQnDHs/Icon-16-by-16.jpg" sizes="32x32">
-                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
-                      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
-                      <style type="text/css">
-                        body {
-                            display: flex;
-                            min-height: 100vh;
-                            flex-direction: column;
-                        }
-
-                        h1 {
-                            font-size: 2em;
-                        }
-
-                        main {
-                            flex: 1 0 auto;
-                        }
-
-                        footer {
-                            padding-top: 0 !important;
-                        }
-
-                        #data {
-                            background: #fafafa;
-                            border: #eee solid 1px;
-                            padding: 12px;
-                            word-break: break-word;
-                        }
-
-                        #main {
-                            width: 100%;
-                        }
-
-                        #progress {
-                            position: absolute;
-                            margin-top: 0;
-                        }
-
-                        #title {
-                            width: 100%;
-                        }
-
-                        #url {
-                            padding-bottom: 0;
-                            margin-bottom: 0;
-                        }
-
-                        #url:focus {
-                            border-bottom: 1px solid #008000;
-                            box-shadow: 0 1px 0 0 #008000;
-                        }
-
-                        #url:focus+label {
-                            color: #008000;
-                        }
-
-                        .black-text {
-                            color: #000000 !important;
-                        }
-
-                        .max-lines {
-                            float: right;
-                            font-size: 12px;
-                            padding-bottom: 16px;
-                        }
-
-                        .support {
-                            text-align: center;
-                            color: #9e9e9e;
-                        }
-
-                        .valign-top {
-                            vertical-align: top;
-                        }
-
-                        /* Nav panel */
-                        @media only screen and (max-width: 992px) {
-                            nav .description {
-                                width: 100%;
-                                top: -56px !important;
-                                display: block;
-                                text-align: center;
-                            }
-                        }
-
-                        @media only screen and (max-width: 601px) {
-                            nav .nav-wrapper {
-                                margin-top: 5px;
-                                width: 100%;
-                            }
-
-                            nav .description {
-                                top: -47px !important;
-                            }
-
-                            #data li {
-                                margin-top: 5px;
-                            }
-                        }
-
-                        nav {
-                            box-shadow: none;
-                            -moz-box-shadow: none;
-                        }
-
-                        nav .brand-logo {
-                            color: black;
-                            font-weight: 500;
-                            display: inline-table;
-                            top: -10px;
-                            float: left;
-                        }
-
-                        nav .brand-logo-small {
-                            font-size: 1.4rem;
-                        }
-
-                        nav .brand-logo-small #header-logo {
-                            position: relative;
-                            top: 3px;
-                            width: 22px;
-                            height: 22px;
-                        }
-
-                        nav .brand-logo span {
-                            font-weight: 100;
-                        }
-
-                        nav .description {
-                            color: #757575;
-                            top: 12px;
-                            position: relative;
-                        }
-
-                        nav ul a {
-                            color: black;
-                        }
-
-                        nav i {
-                            color: #039be5;
-                        }
-
-
-                    </style>
-                </head>
-
-                <body>
-    <!--[if lt IE 7]>
-      <center>
-        <p>
-          You are using an <strong>outdated</strong> browser. Please
-          <a href="#">upgrade your browser</a> to improve
-          your experience.
-        </p>
-      </center>
-  <![endif]-->
-    <div class="progress blue lighten-3 hide" id="progress">
-        <div class="indeterminate blue"></div>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<section class="page_404">
+	<div class="container">
+		<div class="row">	
+		<div class="col-sm-12 ">
+		<div class="col-sm-10 col-sm-offset-1  text-center">
+		<div class="four_zero_four_bg">
+			<h1 class="text-center ">404</h1>
+		
+		
+		</div>
+		
+		<div class="contant_box_404">
+		<h3 class="h2">
+		Look like you're lost
+		</h3>
+		
+		<p>the page you are looking for not avaible!</p>
+		
+		<a href="/calendar" class="link_404">Go to Home</a>
+	</div>
+		</div>
+		</div>
+		</div>
+	</div>
+</section>
+<!-- partial -->
+    <div class="footer">
+        <p>Designed by <a href="https://narshingbariweb.blogspot.com/p/about-admin-saddam-hussain.html">Narshingbari Saddam</a></p>
     </div>
-    <header>
-        <nav class="transparent black-text">
-            <div class="nav-wrapper container">
-                <a href="#" class="">
-                    <span class="fa-stack fa-lg valign-top">
-                        <i class="fa fa-circle fa-stack-2x"></i>
-                        <i class="fa fa-link fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <span class="brand-logo brand-logo-small">Narshingbari Bangla Calendar</span>
-                    <span class="description">Bangla Calendar 1430</span>
-                </a>
-            </div>
-        </nav>
-    </header>
-    <br />
-    <div class="container section support">
-        <span>Bengali Calendar is also called as Bengali Ponjika or Bangla Panjika. Narshingbari Bangla Calendar offers Lifetime Calendar. &#10150; 
-            <b> <a href="https://play.google.com/store/apps/details?id=io.kodular.Narshingbariu.Narshingbari">Install app</a> </b> </span>
-        </div>
-        <div style="text-align: center;"><b><u><span style="font-size: medium;">Current Bengali Date &amp; Time</span></u></b></div>
-        <br />
-        <div align="center">
-            <span style="font-weight: 400;"><center>
-                <div arial="" class="clockbox" style="color: magenta; font: 20pt;">
-                </div>
-                <script type="text/javascript">
-                    var tday=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-                    var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
-                    function GetClock(){
-                        var d=new Date();
-                        var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
-                        var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
-                        if(nhour==0){ap=" AM";nhour=12;}
-                        else if(nhour<12){ap=" AM";}
-                        else if(nhour==12){ap=" PM";}
-                        else if(nhour>12){ap=" PM";nhour-=12;}
-                        if(nmin<=9) nmin="0"+nmin;
-                        if(nsec<=9) nsec="0"+nsec;
-                        var clocktext=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+":"+nsec+ap+"";
-                        var obj=document.querySelectorAll('.clockbox');
-                        for(var i in obj){
-                           obj[i].innerHTML=clocktext;
-                       }
-                   }
-                   GetClock();
-                   setInterval(GetClock,1000);
-               </script>
-           </span>
-       </div>
-
-
-       <div align="center">
-        <div id="IframeWrapper" style="position: relative;">
-            <iframe frameborder='0' height='365px' width='95%' scrolling='no' src='https://bengalicalendar.com/embed/index.php' frameborder="0" allowfullscreen></iframe>
-            <br />
-            <div id="iframeBlocker" style="background-color: aliceblue; height: 95%; left: 0; opacity: 0.1; position: absolute; top: 0; width: 95%;">
-            </div>
-        </div>
-    </div>
-
-    <div class="container section support">
-        <span>If you are experiencing any issues please contact
-            <a href="mailto:Narshingbariu@gmail.com">Narshingbari@mail.com</a></span>
-        </div>
-        <footer class="page-footer blue">
-            <div class="footer-copyright">
-                <div class="container white-text" style="display: flex;justify-content: space-between;">
-                    <span>Copyright © <span id="year">2023</span> Narshingbari Bangla Calendar</span>
-                    <a href="https://narshingbaristore.blogspot.com/" class="white-text right" rel="dofollow">All Right Reserved</a>
-                </div>
-            </div>
-        </footer>
-
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.12/clipboard.min.js"></script>
-        <script type="text/javascript">
-            $(function() {
-                            // Sets the copyright year
-                var date = new Date();
-                $('#year').text(date.getFullYear());
-            </script>
-
-            <marquee style='color:white;background:red;position:fixed;bottom:0;z-index:99999999999' width='100%'> Call For Best Price Super Distributer And Distributer ID. Call Now :- 8753907321 ||  Call For Best Price Super Distributer And Distributer ID. Call Now :- 8753907321 ||  Call For Best Price Super Distributer And Distributer ID. Call Now :- 8753907321 ||  Call For Best Price Super Distributer And Distributer ID. Call Now :- 8753907321</marquee>
-        </body>
-
-        </html>
+</body>
+</html>
